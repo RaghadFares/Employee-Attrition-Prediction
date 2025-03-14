@@ -28,10 +28,13 @@ The dataset includes employee attributes such as:
 #### The Complex Models:
 - K-Nearest Neighbors        
 - Support Vector Classifier
-- And some Ensemble Methods like: 
+
+And some Ensemble Methods like: 
 - Random Forest              
 - Gradient Boosting          
 - XGBoost
+
+
   #### Our final model:
   - we preffred to leverage the strengths of multiple models,
   we applied an ensemble learning approach using a voting classifier, which combines predictions from Gradient Boosting, Random Forest, and XGBoost.

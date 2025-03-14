@@ -23,22 +23,25 @@ The dataset includes employee attributes such as:
    - Identifying trends and correlations
    - Visualizing key features impacting attrition
 3. **Model Selection & Training**
-   - Logistic Regression
-   - Decision Trees
-   - Random Forest
-   - Support Vector Machines (SVM)
-   - Gradient Boosting (XGBoost, LightGBM, etc.)
-4. **Evaluation & Optimization**
+3.1 The baseline Model :
+  -  Logistic Regression.
+3.2 The Complex Models:
+- K-Nearest Neighbors        
+- Support Vector Classifier
+- And some Ensemble Methods like: 
+- Random Forest              
+- Gradient Boosting          
+- XGBoost
+3.3 Our final model:
+  - we preffred to leverage the strengths of multiple models,
+  we applied an ensemble learning approach using a voting classifier, which combines predictions from Gradient Boosting, Random Forest, and XGBoost.
+ By using soft voting, And here we have reached something we are satisfied with :) ..
+
+5. **Evaluation & Optimization**
    - Accuracy, Precision, Recall, F1-score
    - Hyperparameter tuning using Grid Search/Randomized Search
    - Feature importance analysis
 
-## Installation & Requirements
-To set up the project, install the necessary dependencies:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### Requirements
 - Python 3.x
@@ -48,28 +51,23 @@ pip install -r requirements.txt
 - Matplotlib & Seaborn (for visualization)
 - XGBoost/LightGBM (for advanced modeling)
 
-## Usage
-Run the main script to train the model and make predictions:
-
-```bash
-python main.py
-```
-
-Modify hyperparameters and configurations in `config.py` for different models and settings.
 
 ## Results & Insights
-The model identifies key features influencing employee attrition, helping organizations make strategic decisions to reduce turnover. Insights include:
-- Employees in specific job roles are more likely to leave.
-- Work-life balance and job satisfaction significantly impact attrition rates.
-- Compensation and promotion frequency correlate with retention.
+The model demonstrates significant improvements in predicting employee attrition:
+
+- Precision skyrocketed (from 0.64 → 0.96), meaning fewer false positives.
+
+- Recall improved significantly (0.41 → 0.86), ensuring more true positives are captured.
+
+- F1-score is now 0.90, showing a great balance between precision and recall.
+
+- ROC-AUC (0.95) indicates strong overall classification ability.
+
+These results highlight the effectiveness of the machine learning approach in identifying key factors influencing employee attrition, helping organizations make strategic decisions to improve retention
 
 ## Contributions
 Contributions are welcome! Feel free to fork the repository, submit pull requests, or raise issues.
 
-## License
-This project is licensed under the MIT License.
-
 ## Acknowledgments
-- Open-source datasets on employee attrition
-- Contributors and researchers in workforce analytics
+- Open-source datasets on employee attrition from kaggle .
 

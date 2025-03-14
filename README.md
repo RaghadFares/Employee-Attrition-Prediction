@@ -25,14 +25,14 @@ The dataset includes employee attributes such as:
 3. **Model Selection & Training**
 3.1 The baseline Model :
   -  Logistic Regression.
-3.2 The Complex Models:
+3.2 * The Complex Models:
 - K-Nearest Neighbors        
 - Support Vector Classifier
 - And some Ensemble Methods like: 
 - Random Forest              
 - Gradient Boosting          
 - XGBoost
-3.3 Our final model:
+* 3.3 Our final model:
   - we preffred to leverage the strengths of multiple models,
   we applied an ensemble learning approach using a voting classifier, which combines predictions from Gradient Boosting, Random Forest, and XGBoost.
  By using soft voting, And here we have reached something we are satisfied with :) ..

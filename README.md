@@ -1,7 +1,3 @@
-Here’s the **updated `README.md`** file with your final model, performance metrics, and all the enhancements:
-
----
-
 # Predicting Employee Attrition
 
 ## 📌 Overview

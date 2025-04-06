@@ -108,6 +108,3 @@ Feel free to fork, contribute, and submit pull requests!
 ## 🙏 Acknowledgments
 Thanks to open-source contributions and [Kaggle](https://www.kaggle.com) for the dataset on employee attrition.
 
----
-
-Let me know if you’d like a `requirements.txt`, usage example in code, or add visuals like a confusion matrix or ROC curve to the README!
